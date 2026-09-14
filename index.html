@@ -74,7 +74,8 @@
         }
         
         /* Gradient text */
-        .text-white {
+        .gradient-text {
+            color: #2dd4bf; /* fallback for browsers without background-clip:text support */
             background: linear-gradient(135deg, #60a5fa 0%, #2dd4bf 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
@@ -519,7 +520,7 @@
                 <!-- Emerging Technologies -->
                 <div class="glass-card p-6 rounded-xl interactive-card">
                     <h3 class="text-xl font-semibold mb-4 gradient-text">Emerging Technologies</h3>
-                    <ul class="space-y-2">
+                    <ul class="space-y-2 text-gray-300">
                         <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> GenAI, Agentic AI</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> LangChain, LangGraph</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> OpenAI, Claude, Llama</li>
@@ -533,7 +534,7 @@
                 <!-- Programming & Frameworks -->
                 <div class="glass-card p-6 rounded-xl interactive-card">
                     <h3 class="text-xl font-semibold mb-4 gradient-text">Programming & Frameworks</h3>
-                    <ul class="space-y-2">
+                    <ul class="space-y-2 text-gray-300">
                         <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> Python</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> FastAPI, Flask, Django</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-400 mr-2"></i> REST APIs, Microservices</li>
@@ -544,7 +545,7 @@
                 <!-- Databases -->
                 <div class="glass-card p-6 rounded-xl interactive-card">
                     <h3 class="text-xl font-semibold mb-4 gradient-text">Databases</h3>
-                    <ul class="space-y-2">
+                    <ul class="space-y-2 text-gray-300">
                         <li class="flex items-center"><i class="fas fa-database text-blue-400 mr-2"></i> MongoDB, PostgreSQL, MySQL</li>
                         <li class="flex items-center"><i class="fas fa-database text-blue-400 mr-2"></i> Vector Databases (FAISS)</li>
                         <li class="flex items-center"><i class="fas fa-database text-blue-400 mr-2"></i> Redis</li>
@@ -554,7 +555,7 @@
                 <!-- DevOps & Cloud -->
                 <div class="glass-card p-6 rounded-xl interactive-card">
                     <h3 class="text-xl font-semibold mb-4 gradient-text">DevOps & Cloud</h3>
-                    <ul class="space-y-2">
+                    <ul class="space-y-2 text-gray-300">
                         <li class="flex items-center"><i class="fab fa-docker text-blue-400 mr-2"></i> Docker, Containerization</li>
                         <li class="flex items-center"><i class="fab fa-git-alt text-orange-400 mr-2"></i> Git, GitHub, GitLab, CI/CD</li>
                         <li class="flex items-center"><i class="fas fa-cloud text-blue-300 mr-2"></i> AWS (EC2, S3)</li>
@@ -569,7 +570,7 @@
                 <!-- Tools -->
                 <div class="glass-card p-6 rounded-xl interactive-card">
                     <h3 class="text-xl font-semibold mb-4 gradient-text">Tools & Technologies</h3>
-                    <ul class="space-y-2">
+                    <ul class="space-y-2 text-gray-300">
                         <li class="flex items-center"><i class="fab fa-linux text-gray-400 mr-2"></i> Linux/Ubuntu</li>
                         <li class="flex items-center"><i class="fas fa-terminal text-gray-300 mr-2"></i> Bash/Shell Scripting</li>
                         <li class="flex items-center"><i class="fas fa-code text-blue-400 mr-2"></i> VS Code, Windsurf, Antigravity, Cursor</li>
@@ -581,7 +582,7 @@
                 <!-- AI Models -->
                 <div class="glass-card p-6 rounded-xl interactive-card">
                     <h3 class="text-xl font-semibold mb-4 gradient-text">AI Models</h3>
-                    <ul class="space-y-2">
+                    <ul class="space-y-2 text-gray-300">
                         <li class="flex items-center"><i class="fas fa-brain text-pink-500 mr-2"></i> GPT-4o, GPT-4o-mini</li>
                         <li class="flex items-center"><i class="fas fa-brain text-purple-400 mr-2"></i> Claude 3.5 Sonnet</li>
                         <li class="flex items-center"><i class="fas fa-brain text-blue-400 mr-2"></i> Llama 3</li>
@@ -604,7 +605,7 @@
                         <h3 class="text-xl font-semibold text-white">Machine Learning</h3>
                     </div>
                     <p class="text-gray-400 mb-4">Udemy Certification in Machine Learning</p>
-                    <a href="certificates/machine_learning _udemy.pdf" target="_blank" 
+                    <a href="certificates/machine_learning_udemy.pdf" target="_blank" 
                        class="inline-flex items-center text-blue-400 hover:text-blue-300">
                         <i class="fas fa-external-link-alt mr-2"></i> View Certificate
                     </a>
@@ -636,8 +637,8 @@
                 <div class="glass-card p-6 rounded-xl interactive-card timeline-item">
                     <div class="flex justify-between items-start">
                         <div>
-                            <h3 class="text-xl font-semibold gradient-text">Technology Company</h3>
-                            <p class="text-gray-400">Python Developer - III <b>|  Enterprise Clients |</b>  R & D Automation Team, Engineering</p>
+                            <h3 class="text-xl font-semibold gradient-text">vSplash Techlabs Private Limited</h3>
+                            <p class="text-gray-400">Hyderabad, TG · Python Developer - III <b>|  Enterprise Clients |</b>  R & D Automation Team, Engineering</p>
                         </div>
                         <span class="bg-teal-900 text-teal-300 text-sm px-3 py-1 rounded-full">Jul 2025 – Sep 2026</span>
                     </div>
@@ -659,8 +660,8 @@
                 <div class="glass-card p-6 rounded-xl interactive-card timeline-item">
                     <div class="flex justify-between items-start">
                         <div>
-                            <h3 class="text-xl font-semibold">AI Company</h3>
-                            <p class="text-gray-400">Associate Software Engineer, Customer Success Engineer <b>|</b> Product: Document Processing Platform | Enterprise Clients</p>
+                            <h3 class="text-xl font-semibold gradient-text">Deep Cognition India Pvt. Ltd</h3>
+                            <p class="text-gray-400">Bengaluru, KA · Associate Software Engineer, Customer Success Engineer <b>|</b> Product: PaperEntry | Enterprise Clients</p>
                         </div>
                         <span class="bg-teal-900 text-teal-300 text-sm px-3 py-1 rounded-full">May 2023 – Jul 2025</span>
                     </div>
@@ -682,8 +683,8 @@
                 <div class="glass-card p-6 rounded-xl interactive-card timeline-item">
                     <div class="flex justify-between items-start">
                         <div>
-                            <h3 class="text-xl font-semibold">Software Solutions Company</h3>
-                            <p class="text-gray-400">Software Consultant <b>|</b> Fintech Clients</p>
+                            <h3 class="text-xl font-semibold gradient-text">Profinch Solutions Pvt Ltd.</h3>
+                            <p class="text-gray-400">Bengaluru, KA · Software Consultant <b>|</b> Fintech Clients</p>
                         </div>
                         <span class="bg-teal-900 text-teal-300 text-sm px-3 py-1 rounded-full">Jul 2022 – May 2023</span>
                     </div>
