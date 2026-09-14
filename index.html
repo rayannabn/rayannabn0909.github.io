@@ -43,39 +43,39 @@
         
         /* Glassmorphism effects */
         .glass {
-            background: rgba(255, 255, 255, 0.15);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.25);
-            box-shadow: 0 8px 32px 0 rgba(30, 58, 138, 0.15);
-        }
-        
-        .glass-dark {
-            background: rgba(0, 0, 0, 0.25);
+            background: rgba(15, 23, 42, 0.6);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+        }
+        
+        .glass-dark {
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
         }
         
         .glass-card {
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(30, 41, 59, 0.7);
             backdrop-filter: blur(12px);
             -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.4);
-            box-shadow: 0 8px 32px 0 rgba(30, 58, 138, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
             transition: all 0.3s ease;
         }
         
         .glass-card:hover {
-            background: rgba(255, 255, 255, 0.95);
+            background: rgba(30, 41, 59, 0.9);
             transform: translateY(-5px);
-            box-shadow: 0 12px 40px 0 rgba(30, 58, 138, 0.2);
+            box-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.3);
         }
         
         /* Gradient text */
-        .gradient-text {
-            background: linear-gradient(135deg, #1e3a8a 0%, #0f766e 100%);
+        .text-white {
+            background: linear-gradient(135deg, #60a5fa 0%, #2dd4bf 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -197,7 +197,7 @@
             position: absolute;
             width: 4px;
             height: 4px;
-            background: rgba(30, 58, 138, 0.4);
+            background: rgba(59, 130, 246, 0.5);
             border-radius: 50%;
             animation: particle-float 15s infinite;
         }
@@ -311,35 +311,36 @@
         
         /* Form styling */
         .form-input {
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(30, 41, 59, 0.8);
             backdrop-filter: blur(5px);
-            border: 1px solid rgba(30, 58, 138, 0.2);
+            border: 1px solid rgba(59, 130, 246, 0.3);
+            color: #e2e8f0;
             transition: all 0.3s ease;
         }
         
         .form-input:focus {
-            background: rgba(255, 255, 255, 0.95);
-            border-color: #1e3a8a;
-            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
+            background: rgba(30, 41, 59, 0.95);
+            border-color: #3b82f6;
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
             outline: none;
         }
         
         /* Section backgrounds */
         .bg-alt {
-            background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
+            background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
         }
         
         /* Skill tags */
         .skill-tag {
-            background: linear-gradient(135deg, rgba(30, 58, 138, 0.08) 0%, rgba(15, 118, 110, 0.08) 100%);
-            border: 1px solid rgba(30, 58, 138, 0.2);
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2) 0%, rgba(20, 184, 166, 0.2) 100%);
+            border: 1px solid rgba(59, 130, 246, 0.3);
             transition: all 0.3s ease;
         }
         
         .skill-tag:hover {
-            background: linear-gradient(135deg, rgba(30, 58, 138, 0.15) 0%, rgba(15, 118, 110, 0.15) 100%);
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.3) 0%, rgba(20, 184, 166, 0.3) 100%);
             transform: scale(1.05);
-            border-color: #1e3a8a;
+            border-color: #3b82f6;
         }
         
         /* Timeline for experience */
@@ -383,22 +384,22 @@
         }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-900">
     <!-- Particle Background -->
     <div class="particles" id="particles"></div>
     <!-- Navigation -->
-    <nav class="bg-white shadow-lg fixed w-full z-10">
+    <nav class="bg-gray-800 shadow-lg fixed w-full z-10">
         <div class="max-w-6xl mx-auto px-4">
             <div class="flex justify-between items-center h-16">
                 <div class="flex items-center space-x-2">
-                    <div class="text-xl font-semibold text-gray-800">Rayanagoud Nadagoudra</div></div>
+                    <div class="text-xl font-semibold text-gray-200">Rayanagoud Nadagoudra</div></div>
                 <div class="hidden md:flex space-x-8">
-                    <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
-                    <a href="#skills" class="text-gray-700 hover:text-blue-600">Skills</a>
-                    <a href="#experience" class="text-gray-700 hover:text-blue-600">Work Experience</a>
-                    <a href="#projects" class="text-gray-700 hover:text-blue-600">Projects</a>
-                    <a href="#education" class="text-gray-700 hover:text-blue-600">Education</a>
-                    <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+                    <a href="#about" class="text-gray-300 hover:text-blue-400">About</a>
+                    <a href="#skills" class="text-gray-300 hover:text-blue-400">Skills</a>
+                    <a href="#experience" class="text-gray-300 hover:text-blue-400">Work Experience</a>
+                    <a href="#projects" class="text-gray-300 hover:text-blue-400">Projects</a>
+                    <a href="#education" class="text-gray-300 hover:text-blue-400">Education</a>
+                    <a href="#contact" class="text-gray-300 hover:text-blue-400">Contact</a>
                 </div>
                 <div class="md:hidden">
                     <button class="mobile-menu-button">
@@ -460,14 +461,14 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section py-16 bg-alt">
+    <section id="about" class="section py-16 bg-gray-800">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 fade-in gradient-text">About Me</h2>
             <div class="max-w-4xl mx-auto">
                 
-                <p class="text-lg text-gray-700 mb-6">I’m a product-minded engineer who cares about performance, accessibility and design. I enjoy turning fuzzy problems into polished, intuitive user experiences and shipping code that lasts.</p>
+                <p class="text-lg text-gray-300 mb-6">I’m a product-minded engineer who cares about performance, accessibility and design. I enjoy turning fuzzy problems into polished, intuitive user experiences and shipping code that lasts.</p>
 
-                <p class="text-lg text-gray-700 mb-6">
+                <p class="text-lg text-gray-300 mb-6">
                     Dynamic Python Developer delivering enterprise-grade backend solutions and intelligent automation systems. 
                     Expert in leveraging AI technologies to build scalable applications that transform business operations, 
                     enhance efficiency, and achieve measurable return on investment.
@@ -476,10 +477,10 @@
                     <div class="glass-card p-6 rounded-2xl slide-in-left">
                         <h3 class="text-xl font-semibold mb-4 gradient-text">Connect With Me</h3>
                         <div class="flex space-x-4">
-                            <a href="https://www.linkedin.com/in/rayanagoud-nadagoudra-07023918b/" class="text-3xl text-gray-700 hover:text-blue-500 transition-colors" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://rayannabn0909.github.io/" class="text-3xl text-gray-700 hover:text-red-600 transition-colors" target="_blank" rel="noopener noreferrer"><i class="fab fa-google"></i></a>
-                            <a href="https://github.com/rayannabn" class="text-3xl text-gray-700 hover:text-blue-600 transition-colors" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-                            <a href="https://gitlab.com/machinemasters/chatapplication" class="text-3xl text-gray-700 hover:text-orange-600 transition-colors" target="_blank" rel="noopener noreferrer"><i class="fab fa-gitlab"></i></a>
+                            <a href="https://www.linkedin.com/in/rayanagoud-nadagoudra-07023918b/" class="text-3xl text-gray-300 hover:text-blue-400 transition-colors" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://rayannabn0909.github.io/" class="text-3xl text-gray-300 hover:text-red-400 transition-colors" target="_blank" rel="noopener noreferrer"><i class="fab fa-google"></i></a>
+                            <a href="https://github.com/rayannabn" class="text-3xl text-gray-300 hover:text-blue-400 transition-colors" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+                            <a href="https://gitlab.com/machinemasters/chatapplication" class="text-3xl text-gray-300 hover:text-orange-400 transition-colors" target="_blank" rel="noopener noreferrer"><i class="fab fa-gitlab"></i></a>
                         </div>
                     </div>
                     
@@ -487,16 +488,16 @@
                         <h3 class="text-xl font-semibold mb-4 gradient-text">Quick Stats</h3>
                         <div class="space-y-3">
                             <div class="flex justify-between items-center">
-                                <span class="text-gray-600">Experience</span>
-                                <span class="font-semibold gradient-text">4+ Years</span>
+                                <span class="text-gray-400">Experience</span>
+                                <span class="font-semibold text-white">4+ Years</span>
                             </div>
                             <div class="flex justify-between items-center">
-                                <span class="text-gray-600">Projects Delivered</span>
-                                <span class="font-semibold gradient-text">240K+ Orders</span>
+                                <span class="text-gray-400">Projects Delivered</span>
+                                <span class="font-semibold text-white">240K+ Orders</span>
                             </div>
                             <div class="flex justify-between items-center">
-                                <span class="text-gray-600">Technologies</span>
-                                <span class="font-semibold gradient-text">15+ Skills</span>
+                                <span class="text-gray-400">Technologies</span>
+                                <span class="font-semibold text-white">15+ Skills</span>
                             </div>
                         </div>
                     </div>
@@ -506,13 +507,13 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section py-16 bg-white">
+    <section id="skills" class="section py-16 bg-gray-800">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 fade-in gradient-text">Skills & Expertise</h2>
             <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- Emerging Technologies -->
                 <div class="glass-card p-6 rounded-xl interactive-card">
-                    <h3 class="text-xl font-semibold mb-4 gradient-text">Emerging Technologies</h3>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Emerging Technologies</h3>
                     <ul class="space-y-2">
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> GenAI, Agentic AI</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> LangChain, LangGraph</li>
@@ -526,7 +527,7 @@
 
                 <!-- Programming & Frameworks -->
                 <div class="glass-card p-6 rounded-xl interactive-card">
-                    <h3 class="text-xl font-semibold mb-4 gradient-text">Programming & Frameworks</h3>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Programming & Frameworks</h3>
                     <ul class="space-y-2">
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> Python</li>
                         <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> FastAPI, Flask, Django</li>
@@ -537,7 +538,7 @@
 
                 <!-- Databases -->
                 <div class="glass-card p-6 rounded-xl interactive-card">
-                    <h3 class="text-xl font-semibold mb-4 gradient-text">Databases</h3>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Databases</h3>
                     <ul class="space-y-2">
                         <li class="flex items-center"><i class="fas fa-database text-blue-500 mr-2"></i> MongoDB, PostgreSQL, MySQL</li>
                         <li class="flex items-center"><i class="fas fa-database text-blue-500 mr-2"></i> Vector Databases (FAISS)</li>
@@ -547,13 +548,13 @@
 
                 <!-- DevOps & Cloud -->
                 <div class="glass-card p-6 rounded-xl interactive-card">
-                    <h3 class="text-xl font-semibold mb-4 gradient-text">DevOps & Cloud</h3>
+                    <h3 class="text-xl font-semibold mb-4 text-white">DevOps & Cloud</h3>
                     <ul class="space-y-2">
                         <li class="flex items-center"><i class="fab fa-docker text-blue-400 mr-2"></i> Docker, Containerization</li>
                         <li class="flex items-center"><i class="fab fa-git-alt text-orange-500 mr-2"></i> Git, GitHub, GitLab, CI/CD</li>
                         <li class="flex items-center"><i class="fas fa-cloud text-blue-300 mr-2"></i> AWS (EC2, S3)</li>
                         <li class="flex items-center"><i class="fas fa-cloud text-yellow-500 mr-2"></i> GCP</li>
-                        <li class="flex items-center"><i class="fas fa-server text-gray-600 mr-2"></i> Nginx, Gunicorn, uvicorn</li>
+                        <li class="flex items-center"><i class="fas fa-server text-gray-400 mr-2"></i> Nginx, Gunicorn, uvicorn</li>
                         <li class="flex items-center"><i class="fas fa-cogs text-purple-500 mr-2"></i> System Design</li>
                     </ul>
                 </div>
@@ -562,10 +563,10 @@
 
                 <!-- Tools -->
                 <div class="glass-card p-6 rounded-xl interactive-card">
-                    <h3 class="text-xl font-semibold mb-4 gradient-text">Tools & Technologies</h3>
+                    <h3 class="text-xl font-semibold mb-4 text-white">Tools & Technologies</h3>
                     <ul class="space-y-2">
                         <li class="flex items-center"><i class="fab fa-linux text-black mr-2"></i> Linux/Ubuntu</li>
-                        <li class="flex items-center"><i class="fas fa-terminal text-gray-700 mr-2"></i> Bash/Shell Scripting</li>
+                        <li class="flex items-center"><i class="fas fa-terminal text-gray-300 mr-2"></i> Bash/Shell Scripting</li>
                         <li class="flex items-center"><i class="fas fa-code text-blue-600 mr-2"></i> VS Code, Windsurf, Antigravity, Cursor</li>
                         <li class="flex items-center"><i class="fas fa-robot text-purple-600 mr-2"></i> Devin, Claude, Codex, Copilot</li>
                         <li class="flex items-center"><i class="fas fa-chart-line text-green-600 mr-2"></i> MLflow, LibreChat</li>
@@ -574,7 +575,7 @@
 
                 <!-- AI Models -->
                 <div class="glass-card p-6 rounded-xl interactive-card">
-                    <h3 class="text-xl font-semibold mb-4 gradient-text">AI Models</h3>
+                    <h3 class="text-xl font-semibold mb-4 text-white">AI Models</h3>
                     <ul class="space-y-2">
                         <li class="flex items-center"><i class="fas fa-brain text-pink-500 mr-2"></i> GPT-4o, GPT-4o-mini</li>
                         <li class="flex items-center"><i class="fas fa-brain text-purple-500 mr-2"></i> Claude 3.5 Sonnet</li>
@@ -597,7 +598,7 @@
                         <i class="fas fa-certificate text-yellow-500 text-2xl mr-3"></i>
                         <h3 class="text-xl font-semibold">Machine Learning</h3>
                     </div>
-                    <p class="text-gray-600 mb-4">Udemy Certification in Machine Learning</p>
+                    <p class="text-gray-400 mb-4">Udemy Certification in Machine Learning</p>
                     <a href="certificates/machine_learning _udemy.pdf" target="_blank" 
                        class="inline-flex items-center text-blue-600 hover:text-blue-800">
                         <i class="fas fa-external-link-alt mr-2"></i> View Certificate
@@ -610,7 +611,7 @@
                         <i class="fas fa-certificate text-yellow-500 text-2xl mr-3"></i>
                         <h3 class="text-xl font-semibold">Angular</h3>
                     </div>
-                    <p class="text-gray-600 mb-4">Udemy Certification in Angular</p>
+                    <p class="text-gray-400 mb-4">Udemy Certification in Angular</p>
                     <a href="certificates/udemy_Angular_certificate.pdf" target="_blank" 
                        class="inline-flex items-center text-blue-600 hover:text-blue-800">
                         <i class="fas fa-external-link-alt mr-2"></i> View Certificate
@@ -621,7 +622,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section py-16 bg-alt">
+    <section id="experience" class="section py-16 bg-gray-800">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 fade-in gradient-text">Work Experience</h2>
             
@@ -631,11 +632,11 @@
                     <div class="flex justify-between items-start">
                         <div>
                             <h3 class="text-xl font-semibold">Technology Company</h3>
-                            <p class="text-gray-600">Python Developer - III <b>|  Enterprise Clients |</b>  R & D Automation Team, Engineering</p>
+                            <p class="text-gray-400">Python Developer - III <b>|  Enterprise Clients |</b>  R & D Automation Team, Engineering</p>
                         </div>
-                        <span class="bg-teal-100 text-teal-800 text-sm px-3 py-1 rounded-full">Jul 2025 – Sep 2026</span>
+                        <span class="bg-teal-900 text-teal-300 text-sm px-3 py-1 rounded-full">Jul 2025 – Sep 2026</span>
                     </div>
-                    <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+                    <ul class="mt-4 list-disc list-inside text-gray-300 space-y-2">
                         <li>Developed and Deployed an AI-Powered SEO Audit Automation platform using Python, FastAPI, GenAI, LLM, CI/CD, Docker, uvicorn, Nginx, MySQL.</li>
                         <li>Built a RAG(FAISS) indexing pipeline to extract text from PDF documents, split content into chunks, generate embeddings, and store vectors in FAISS for efficient semantic search.</li>
                         <li>Implemented hybrid-based retrieval to retrieve relevant SEO guidelines and contextual audit data, increasing LLM response accuracy.</li>
@@ -654,11 +655,11 @@
                     <div class="flex justify-between items-start">
                         <div>
                             <h3 class="text-xl font-semibold">AI Company</h3>
-                            <p class="text-gray-600">Associate Software Engineer, Customer Success Engineer <b>|</b> Product: Document Processing Platform | Enterprise Clients</p>
+                            <p class="text-gray-400">Associate Software Engineer, Customer Success Engineer <b>|</b> Product: Document Processing Platform | Enterprise Clients</p>
                         </div>
-                        <span class="bg-teal-100 text-teal-800 text-sm px-3 py-1 rounded-full">May 2023 – Jul 2025</span>
+                        <span class="bg-teal-900 text-teal-300 text-sm px-3 py-1 rounded-full">May 2023 – Jul 2025</span>
                     </div>
-                    <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+                    <ul class="mt-4 list-disc list-inside text-gray-300 space-y-2">
                         <li>Built AI-based document processing workflows for document classification, extraction, generating and failure handling using Python, OpenAI and automated retry mechanisms.</li>
                         <li>Built an Agentic AI solution for PaperEntry using LLM, and tool-based orchestration to automate document type detection, extraction, generation, report analysis using LLM, RAG, LangChain and LangGraph, GenAI, MongoDB.</li>
                         <li>Developed document extraction services to extract header fields and line-item data from PDF documents and convert the results into structured JSON.</li>
@@ -677,11 +678,11 @@
                     <div class="flex justify-between items-start">
                         <div>
                             <h3 class="text-xl font-semibold">Software Solutions Company</h3>
-                            <p class="text-gray-600">Software Consultant <b>|</b> Fintech Clients</p>
+                            <p class="text-gray-400">Software Consultant <b>|</b> Fintech Clients</p>
                         </div>
-                        <span class="bg-teal-100 text-teal-800 text-sm px-3 py-1 rounded-full">Jul 2022 – May 2023</span>
+                        <span class="bg-teal-900 text-teal-300 text-sm px-3 py-1 rounded-full">Jul 2022 – May 2023</span>
                     </div>
-                    <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
+                    <ul class="mt-4 list-disc list-inside text-gray-300 space-y-2">
                         <li>Built modular REST APIs using Flask to streamline digital loan processing, risk assessment, and customer onboarding workflows.</li>
                         <li>Integrated backend data pipelines and API gateways to handle high-throughput application data and automated transaction reporting.</li>
                         <li>Containerized core microservices with Docker and deployed services on GCP, using Postman for API testing and validation.</li>
@@ -693,7 +694,7 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="section py-16 bg-alt">
+    <section id="education" class="section py-16 bg-gray-800">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 fade-in gradient-text">Education</h2>
             
@@ -701,12 +702,12 @@
                 <div class="glass-card p-6 rounded-xl mb-6 interactive-card">
                     <div class="flex justify-between items-start">
                         <div>
-                            <h3 class="text-xl font-semibold gradient-text">B.Tech in Computer Science and Engineering</h3>
-                            <p class="text-gray-600">M S Ramaiah University of Applied Sciences</p>
+                            <h3 class="text-xl font-semibold text-white">B.Tech in Computer Science and Engineering</h3>
+                            <p class="text-gray-400">M S Ramaiah University of Applied Sciences</p>
                         </div>
                         <div class="text-right">
-                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Jul 2018 – Jun 2022</span>
-                            <p class="text-gray-700 mt-2 font-semibold gradient-text">CGPA: 8.84</p>
+                            <span class="bg-blue-900 text-blue-300 text-sm px-3 py-1 rounded-full">Jul 2018 – Jun 2022</span>
+                            <p class="text-gray-300 mt-2 font-semibold text-white">CGPA: 8.84</p>
                         </div>
                     </div>
                 </div>
@@ -714,12 +715,12 @@
                 <div class="glass-card p-6 rounded-xl mb-6 interactive-card">
                     <div class="flex justify-between items-start">
                         <div>
-                            <h3 class="text-xl font-semibold gradient-text">12th / PUC - Science</h3>
-                            <p class="text-gray-600">JSS RSH PU College, Vidhyagiri, Dharwad</p>
+                            <h3 class="text-xl font-semibold text-white">12th / PUC - Science</h3>
+                            <p class="text-gray-400">JSS RSH PU College, Vidhyagiri, Dharwad</p>
                         </div>
                         <div class="text-right">
-                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">May 2017 – Mar 2018</span>
-                            <p class="text-gray-700 mt-2 font-semibold gradient-text">91.83%</p>
+                            <span class="bg-blue-900 text-blue-300 text-sm px-3 py-1 rounded-full">May 2017 – Mar 2018</span>
+                            <p class="text-gray-300 mt-2 font-semibold text-white">91.83%</p>
                         </div>
                     </div>
                 </div>
@@ -727,12 +728,12 @@
                 <div class="glass-card p-6 rounded-xl interactive-card">
                     <div class="flex justify-between items-start">
                         <div>
-                            <h3 class="text-xl font-semibold gradient-text">SSLC (10th)</h3>
-                            <p class="text-gray-600">Morarji Desai Residential School, Alagawadi</p>
+                            <h3 class="text-xl font-semibold text-white">SSLC (10th)</h3>
+                            <p class="text-gray-400">Morarji Desai Residential School, Alagawadi</p>
                         </div>
                         <div class="text-right">
-                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Jun 2015 – Apr 2016</span>
-                            <p class="text-gray-700 mt-2 font-semibold gradient-text">94.24%</p>
+                            <span class="bg-blue-900 text-blue-300 text-sm px-3 py-1 rounded-full">Jun 2015 – Apr 2016</span>
+                            <p class="text-gray-300 mt-2 font-semibold text-white">94.24%</p>
                         </div>
                     </div>
                 </div>
@@ -741,7 +742,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section py-16 bg-white">
+    <section id="projects" class="section py-16 bg-gray-800">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 fade-in gradient-text">Projects</h2>
             
@@ -750,14 +751,14 @@
                 <div class="glass-card p-6 rounded-xl hover:shadow-lg transition-shadow duration-300 interactive-card">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start">
                         <div class="mb-4 md:mb-0">
-                            <h3 class="text-xl font-semibold text-gray-800">AI-Powered SEO Audit Automation Platform</h3>
-                            <p class="text-gray-600">Enterprise-grade automation platform for SEO analysis using GenAI and Agentic AI workflows</p>
+                            <h3 class="text-xl font-semibold text-gray-200">AI-Powered SEO Audit Automation Platform</h3>
+                            <p class="text-gray-400">Enterprise-grade automation platform for SEO analysis using GenAI and Agentic AI workflows</p>
                         </div>
-                        <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full mt-2 md:mt-0">Production</span>
+                        <span class="bg-blue-900 text-blue-300 text-sm px-3 py-1 rounded-full mt-2 md:mt-0">Production</span>
                     </div>
                     <div class="mt-4">
-                        <h4 class="font-medium text-gray-700 mb-2">Key Features:</h4>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <h4 class="font-medium text-gray-300 mb-2">Key Features:</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
                             <li>RAG-based retrieval using FAISS for accurate SEO guidelines and audit context</li>
                             <li>Agentic AI workflows using LangChain and LangGraph for autonomous SEO analysis</li>
                             <li>MLflow integration for LLM observability and cost monitoring</li>
@@ -765,12 +766,12 @@
                             <li>AWS S3 integration for scalable report management</li>
                         </ul>
                         <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Python</span>
-                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded">FastAPI</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">GenAI</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">RAG</span>
-                            <span class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded">LangChain</span>
-                            <span class="bg-cyan-100 text-cyan-800 text-xs font-medium px-2.5 py-0.5 rounded">Docker</span>
+                            <span class="bg-blue-900 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-teal-900 text-teal-300 text-xs font-medium px-2.5 py-0.5 rounded">FastAPI</span>
+                            <span class="bg-indigo-900 text-indigo-300 text-xs font-medium px-2.5 py-0.5 rounded">GenAI</span>
+                            <span class="bg-purple-900 text-purple-300 text-xs font-medium px-2.5 py-0.5 rounded">RAG</span>
+                            <span class="bg-pink-900 text-pink-300 text-xs font-medium px-2.5 py-0.5 rounded">LangChain</span>
+                            <span class="bg-cyan-900 text-cyan-300 text-xs font-medium px-2.5 py-0.5 rounded">Docker</span>
                         </div>
                     </div>
                 </div>
@@ -781,26 +782,26 @@
                 <div class="glass-card p-6 rounded-xl hover:shadow-lg transition-shadow duration-300 interactive-card">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start">
                         <div class="mb-4 md:mb-0">
-                            <h3 class="text-xl font-semibold text-gray-800">MCP Server for Document Processing</h3>
-                            <p class="text-gray-600">Enterprise MCP server exposing internal document data to AI agents for automated report generation</p>
+                            <h3 class="text-xl font-semibold text-gray-200">MCP Server for Document Processing</h3>
+                            <p class="text-gray-400">Enterprise MCP server exposing internal document data to AI agents for automated report generation</p>
                         </div>
                         <a href="https://github.com/rayannabn/MCP-server" target="_blank" rel="noopener noreferrer" class="inline-flex items-center text-blue-600 hover:text-blue-800">
                             <i class="fas fa-external-link-alt mr-2"></i> View on GitHub
                         </a>
                     </div>
                     <div class="mt-4">
-                        <h4 class="font-medium text-gray-700 mb-2">Key Features:</h4>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <h4 class="font-medium text-gray-300 mb-2">Key Features:</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
                             <li>Model Context Protocol implementation for LibreChat integration</li>
                             <li>Automated billing report generation using Claude Sonnet</li>
                             <li>Dynamic client API synchronization</li>
                             <li>Enterprise-grade security and data access controls</li>
                         </ul>
                         <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Python</span>
-                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded">MCP</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Claude</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">LibreChat</span>
+                            <span class="bg-blue-900 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-teal-900 text-teal-300 text-xs font-medium px-2.5 py-0.5 rounded">MCP</span>
+                            <span class="bg-indigo-900 text-indigo-300 text-xs font-medium px-2.5 py-0.5 rounded">Claude</span>
+                            <span class="bg-purple-900 text-purple-300 text-xs font-medium px-2.5 py-0.5 rounded">LibreChat</span>
                         </div>
                     </div>
                 </div>
@@ -817,15 +818,15 @@
                             </a>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-4">
+                    <p class="text-gray-300 mb-4">
                         A machine learning-based solution designed to identify and classify phishing URLs with high accuracy. This project helps protect users from malicious websites by analyzing various URL features and patterns.
                     </p>
                     <div class="flex flex-wrap gap-2 mt-4">
-                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Machine Learning</span>
-                        <span class="bg-teal-100 text-teal-800 text-xs px-3 py-1 rounded-full">Python</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Scikit-learn</span>
-                        <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Pandas</span>
-                        <span class="bg-pink-100 text-pink-800 text-xs px-3 py-1 rounded-full">Cybersecurity</span>
+                        <span class="bg-blue-900 text-blue-300 text-xs px-3 py-1 rounded-full">Machine Learning</span>
+                        <span class="bg-teal-900 text-teal-300 text-xs px-3 py-1 rounded-full">Python</span>
+                        <span class="bg-indigo-900 text-indigo-300 text-xs px-3 py-1 rounded-full">Scikit-learn</span>
+                        <span class="bg-purple-900 text-purple-300 text-xs px-3 py-1 rounded-full">Pandas</span>
+                        <span class="bg-pink-900 text-pink-300 text-xs px-3 py-1 rounded-full">Cybersecurity</span>
                     </div>
                 </div>
             </div>
@@ -841,15 +842,15 @@
                             </a>
                         </div>
                     </div>
-                    <p class="text-gray-700 mb-4">
+                    <p class="text-gray-300 mb-4">
                         A comprehensive web-based platform designed to streamline the task management process for students and faculty. The system facilitates task assignment, progress tracking, document submission, and communication between students and advisors.
                     </p>
                     <div class="flex flex-wrap gap-2 mt-4">
-                        <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Django</span>
-                        <span class="bg-teal-100 text-teal-800 text-xs px-3 py-1 rounded-full">Python</span>
-                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">PostgreSQL</span>
-                        <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Bootstrap</span>
-                        <span class="bg-pink-100 text-pink-800 text-xs px-3 py-1 rounded-full">Web Development</span>
+                        <span class="bg-blue-900 text-blue-300 text-xs px-3 py-1 rounded-full">Django</span>
+                        <span class="bg-teal-900 text-teal-300 text-xs px-3 py-1 rounded-full">Python</span>
+                        <span class="bg-indigo-900 text-indigo-300 text-xs px-3 py-1 rounded-full">PostgreSQL</span>
+                        <span class="bg-purple-900 text-purple-300 text-xs px-3 py-1 rounded-full">Bootstrap</span>
+                        <span class="bg-pink-900 text-pink-300 text-xs px-3 py-1 rounded-full">Web Development</span>
                     </div>
                 </div>
             </div>
@@ -859,14 +860,14 @@
                 <div class="glass-card p-6 rounded-xl hover:shadow-lg transition-shadow duration-300 interactive-card">
                     <div class="flex flex-col md:flex-row md:justify-between md:items-start">
                         <div class="mb-4 md:mb-0">
-                            <h3 class="text-xl font-semibold text-gray-800">Agentic AI Document Processing Solution</h3>
-                            <p class="text-gray-600">AI-powered document classification, extraction, and generation using LLMs and tool orchestration</p>
+                            <h3 class="text-xl font-semibold text-gray-200">Agentic AI Document Processing Solution</h3>
+                            <p class="text-gray-400">AI-powered document classification, extraction, and generation using LLMs and tool orchestration</p>
                         </div>
                         <span class="bg-green-100 text-green-800 text-sm px-3 py-1 rounded-full mt-2 md:mt-0">Production</span>
                     </div>
                     <div class="mt-4">
-                        <h4 class="font-medium text-gray-700 mb-2">Key Features:</h4>
-                        <ul class="list-disc list-inside text-gray-700 space-y-1">
+                        <h4 class="font-medium text-gray-300 mb-2">Key Features:</h4>
+                        <ul class="list-disc list-inside text-gray-300 space-y-1">
                             <li>Automated document type detection using LLM analysis</li>
                             <li>Intelligent field extraction from PDF documents with structured JSON output</li>
                             <li>Agentic workflows for document processing with automated retry mechanisms</li>
@@ -874,12 +875,12 @@
                             <li>Enterprise system integration with various platforms</li>
                         </ul>
                         <div class="mt-4 flex flex-wrap gap-2">
-                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Python</span>
-                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded">OpenAI</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">LangChain</span>
-                            <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">LangGraph</span>
-                            <span class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded">MongoDB</span>
-                            <span class="bg-cyan-100 text-cyan-800 text-xs font-medium px-2.5 py-0.5 rounded">MLflow</span>
+                            <span class="bg-blue-900 text-blue-300 text-xs font-medium px-2.5 py-0.5 rounded">Python</span>
+                            <span class="bg-teal-900 text-teal-300 text-xs font-medium px-2.5 py-0.5 rounded">OpenAI</span>
+                            <span class="bg-indigo-900 text-indigo-300 text-xs font-medium px-2.5 py-0.5 rounded">LangChain</span>
+                            <span class="bg-purple-900 text-purple-300 text-xs font-medium px-2.5 py-0.5 rounded">LangGraph</span>
+                            <span class="bg-pink-900 text-pink-300 text-xs font-medium px-2.5 py-0.5 rounded">MongoDB</span>
+                            <span class="bg-cyan-900 text-cyan-300 text-xs font-medium px-2.5 py-0.5 rounded">MLflow</span>
                         </div>
                     </div>
                 </div>
@@ -888,57 +889,57 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section py-16 bg-alt">
+    <section id="contact" class="section py-16 bg-gray-800">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 fade-in gradient-text">Get In Touch</h2>
             
             <div class="max-w-4xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div class="glass-card p-6 rounded-xl">
-                        <h3 class="text-xl font-semibold mb-4 gradient-text">Contact Info</h3>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Contact Info</h3>
                         <div class="space-y-4">
                             <div class="flex items-center">
                                 <i class="fas fa-phone-alt text-blue-600 mr-4 text-xl"></i>
                                 <div>
-                                    <p class="text-gray-700">+91 7483129220</p>
+                                    <p class="text-gray-300">+91 7483129220</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
                                 <i class="fas fa-envelope text-blue-600 mr-4 text-xl"></i>
                                 <div>
-                                    <p class="text-gray-700">rayannabn0909@gmail.com</p>
+                                    <p class="text-gray-300">rayannabn0909@gmail.com</p>
                                 </div>
                             </div>
                             <div class="flex items-center">
                                 <i class="fas fa-map-marker-alt text-blue-600 mr-4 text-xl"></i>
                                 <div>
-                                    <p class="text-gray-700">Open to Relocate</p>
+                                    <p class="text-gray-300">Open to Relocate</p>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="mt-6 glass p-4 rounded-xl">
-                            <p class="text-sm text-gray-700">
-                                <i class="fas fa-info-circle mr-2 gradient-text"></i><strong class="gradient-text">Immediate Joiner, Open to work.</strong>
+                            <p class="text-sm text-gray-300">
+                                <i class="fas fa-info-circle mr-2 text-white"></i><strong class="text-white">Immediate Joiner, Open to work.</strong>
                             </p>
                         </div>
                     </div>
                     
                     <div class="glass-card p-6 rounded-xl">
-                        <h3 class="text-xl font-semibold mb-4 gradient-text">Send a Message</h3>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Send a Message</h3>
                         <form id="contactForm" class="space-y-4">
                             <div>
-                                <label for="name" class="block text-gray-700 mb-2">Name</label>
+                                <label for="name" class="block text-gray-300 mb-2">Name</label>
                                 <input type="text" id="name" name="name" required 
                                        class="w-full px-4 py-3 rounded-xl form-input">
                             </div>
                             <div>
-                                <label for="email" class="block text-gray-700 mb-2">Email</label>
+                                <label for="email" class="block text-gray-300 mb-2">Email</label>
                                 <input type="email" id="email" name="email" required 
                                        class="w-full px-4 py-3 rounded-xl form-input">
                             </div>
                             <div>
-                                <label for="message" class="block text-gray-700 mb-2">Message</label>
+                                <label for="message" class="block text-gray-300 mb-2">Message</label>
                                 <textarea id="message" name="message" rows="4" required 
                                           class="w-full px-4 py-3 rounded-xl form-input"></textarea>
                             </div>
@@ -956,7 +957,7 @@
 
 
     <!-- Footer -->
-    <footer class="bg-gray-800 text-white py-8">
+    <footer class="bg-gray-900 text-white py-8">
         <div class="container mx-auto px-4 text-center">
             <div class="flex justify-center space-x-6 mb-6">
                 <a href="https://github.com/rayannabn" class="text-gray-300 hover:text-white" target="_blank" rel="noopener noreferrer"><i class="fab fa-github text-2xl"></i></a>
