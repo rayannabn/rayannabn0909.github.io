@@ -13,7 +13,7 @@
         
         /* Modern gradient backgrounds */
         .hero {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f766e 100%);
             position: relative;
             overflow: hidden;
         }
@@ -26,8 +26,8 @@
             right: 0;
             bottom: 0;
             background: 
-                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(255,255,255,0.1) 0%, transparent 50%);
+                radial-gradient(circle at 20% 50%, rgba(255,255,255,0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255,255,255,0.08) 0%, transparent 50%);
             animation: float 6s ease-in-out infinite;
         }
         
@@ -43,39 +43,39 @@
         
         /* Glassmorphism effects */
         .glass {
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.25);
+            box-shadow: 0 8px 32px 0 rgba(30, 58, 138, 0.15);
         }
         
         .glass-dark {
-            background: rgba(0, 0, 0, 0.3);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
+            background: rgba(0, 0, 0, 0.25);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
             border: 1px solid rgba(255, 255, 255, 0.1);
-            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
         }
         
         .glass-card {
-            background: rgba(255, 255, 255, 0.7);
-            backdrop-filter: blur(10px);
-            -webkit-backdrop-filter: blur(10px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.4);
+            box-shadow: 0 8px 32px 0 rgba(30, 58, 138, 0.1);
             transition: all 0.3s ease;
         }
         
         .glass-card:hover {
-            background: rgba(255, 255, 255, 0.9);
+            background: rgba(255, 255, 255, 0.95);
             transform: translateY(-5px);
-            box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.25);
+            box-shadow: 0 12px 40px 0 rgba(30, 58, 138, 0.2);
         }
         
         /* Gradient text */
         .gradient-text {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f766e 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -83,7 +83,7 @@
         
         /* Modern button styles */
         .btn-gradient {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f766e 100%);
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
@@ -96,7 +96,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
             transition: left 0.5s ease;
         }
         
@@ -106,7 +106,7 @@
         
         .btn-gradient:hover {
             transform: translateY(-2px);
-            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 10px 20px rgba(30, 58, 138, 0.3);
         }
         
         /* Animation classes */
@@ -168,7 +168,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.08) 0%, rgba(15, 118, 110, 0.08) 100%);
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -197,7 +197,7 @@
             position: absolute;
             width: 4px;
             height: 4px;
-            background: rgba(102, 126, 234, 0.5);
+            background: rgba(30, 58, 138, 0.4);
             border-radius: 50%;
             animation: particle-float 15s infinite;
         }
@@ -237,7 +237,7 @@
         /* Typing effect */
         .typing-effect {
             overflow: hidden;
-            border-right: 3px solid #764ba2;
+            border-right: 3px solid #0f766e;
             white-space: nowrap;
             animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
         }
@@ -249,7 +249,7 @@
         
         @keyframes blink-caret {
             from, to { border-color: transparent }
-            50% { border-color: #764ba2 }
+            50% { border-color: #0f766e }
         }
         
         /* Back to top button */
@@ -257,7 +257,7 @@
             position: fixed;
             bottom: 30px;
             right: 30px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f766e 100%);
             color: white;
             width: 50px;
             height: 50px;
@@ -270,7 +270,7 @@
             visibility: hidden;
             transition: all 0.3s ease;
             z-index: 1000;
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 4px 15px rgba(30, 58, 138, 0.3);
         }
         
         .back-to-top.visible {
@@ -280,12 +280,12 @@
         
         .back-to-top:hover {
             transform: translateY(-5px) scale(1.1);
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+            box-shadow: 0 8px 25px rgba(30, 58, 138, 0.5);
         }
         
         /* Active navigation link */
         .nav-link.active {
-            color: #667eea !important;
+            color: #1e3a8a !important;
             font-weight: 600;
             position: relative;
         }
@@ -297,7 +297,7 @@
             left: 0;
             width: 100%;
             height: 2px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f766e 100%);
             border-radius: 2px;
         }
         
@@ -313,40 +313,40 @@
         .form-input {
             background: rgba(255, 255, 255, 0.8);
             backdrop-filter: blur(5px);
-            border: 1px solid rgba(102, 126, 234, 0.3);
+            border: 1px solid rgba(30, 58, 138, 0.2);
             transition: all 0.3s ease;
         }
         
         .form-input:focus {
             background: rgba(255, 255, 255, 0.95);
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+            border-color: #1e3a8a;
+            box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.15);
             outline: none;
         }
         
         /* Section backgrounds */
         .bg-alt {
-            background: linear-gradient(180deg, #f8f9ff 0%, #ffffff 100%);
+            background: linear-gradient(180deg, #f0f9ff 0%, #ffffff 100%);
         }
         
         /* Skill tags */
         .skill-tag {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
-            border: 1px solid rgba(102, 126, 234, 0.3);
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.08) 0%, rgba(15, 118, 110, 0.08) 100%);
+            border: 1px solid rgba(30, 58, 138, 0.2);
             transition: all 0.3s ease;
         }
         
         .skill-tag:hover {
-            background: linear-gradient(135deg, rgba(102, 126, 234, 0.2) 0%, rgba(118, 75, 162, 0.2) 100%);
+            background: linear-gradient(135deg, rgba(30, 58, 138, 0.15) 0%, rgba(15, 118, 110, 0.15) 100%);
             transform: scale(1.05);
-            border-color: #667eea;
+            border-color: #1e3a8a;
         }
         
         /* Timeline for experience */
         .timeline-item {
             position: relative;
             padding-left: 30px;
-            border-left: 2px solid rgba(102, 126, 234, 0.3);
+            border-left: 2px solid rgba(30, 58, 138, 0.2);
         }
         
         .timeline-item::before {
@@ -356,19 +356,19 @@
             top: 0;
             width: 14px;
             height: 14px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background: linear-gradient(135deg, #1e3a8a 0%, #0f766e 100%);
             border-radius: 50%;
             border: 3px solid white;
-            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.4);
+            box-shadow: 0 2px 8px rgba(30, 58, 138, 0.3);
         }
         
         /* Glow effects */
         .glow {
-            box-shadow: 0 0 20px rgba(102, 126, 234, 0.5);
+            box-shadow: 0 0 20px rgba(30, 58, 138, 0.3);
         }
         
         .text-glow {
-            text-shadow: 0 0 10px rgba(102, 126, 234, 0.5);
+            text-shadow: 0 0 10px rgba(30, 58, 138, 0.3);
         }
         
         /* Responsive adjustments */
@@ -630,10 +630,10 @@
                 <div class="glass-card p-6 rounded-xl interactive-card timeline-item">
                     <div class="flex justify-between items-start">
                         <div>
-                            <h3 class="text-xl font-semibold">vSplash Techlabs Private Limited</h3>
-                            <p class="text-gray-600">Python Developer - III <b>|  Clients: GoDaddy, Salesforce |</b>  R & D Automation Team, Engineering</p>
+                            <h3 class="text-xl font-semibold">Technology Company</h3>
+                            <p class="text-gray-600">Python Developer - III <b>|  Enterprise Clients |</b>  R & D Automation Team, Engineering</p>
                         </div>
-                        <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Jul 2025 – Sep 2026</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm px-3 py-1 rounded-full">Jul 2025 – Sep 2026</span>
                     </div>
                     <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
                         <li>Developed and Deployed an AI-Powered SEO Audit Automation platform using Python, FastAPI, GenAI, LLM, CI/CD, Docker, uvicorn, Nginx, MySQL.</li>
@@ -653,10 +653,10 @@
                 <div class="glass-card p-6 rounded-xl interactive-card timeline-item">
                     <div class="flex justify-between items-start">
                         <div>
-                            <h3 class="text-xl font-semibold">Deep Cognition India Pvt. Ltd</h3>
-                            <p class="text-gray-600">Associate Software Engineer, Customer Success Engineer <b>|</b> Product: PaperEntry | Clients: Savino SA, SALAS, VectorGL</p>
+                            <h3 class="text-xl font-semibold">AI Company</h3>
+                            <p class="text-gray-600">Associate Software Engineer, Customer Success Engineer <b>|</b> Product: Document Processing Platform | Enterprise Clients</p>
                         </div>
-                        <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">May 2023 – Jul 2025</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm px-3 py-1 rounded-full">May 2023 – Jul 2025</span>
                     </div>
                     <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
                         <li>Built AI-based document processing workflows for document classification, extraction, generating and failure handling using Python, OpenAI and automated retry mechanisms.</li>
@@ -676,10 +676,10 @@
                 <div class="glass-card p-6 rounded-xl interactive-card timeline-item">
                     <div class="flex justify-between items-start">
                         <div>
-                            <h3 class="text-xl font-semibold">Profinch Solutions Pvt Ltd.</h3>
-                            <p class="text-gray-600">Software Consultant <b>|</b> Clients: Atumverse, Finfra</p>
+                            <h3 class="text-xl font-semibold">Software Solutions Company</h3>
+                            <p class="text-gray-600">Software Consultant <b>|</b> Fintech Clients</p>
                         </div>
-                        <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Jul 2022 – May 2023</span>
+                        <span class="bg-teal-100 text-teal-800 text-sm px-3 py-1 rounded-full">Jul 2022 – May 2023</span>
                     </div>
                     <ul class="mt-4 list-disc list-inside text-gray-700 space-y-2">
                         <li>Built modular REST APIs using Flask to streamline digital loan processing, risk assessment, and customer onboarding workflows.</li>
@@ -705,7 +705,7 @@
                             <p class="text-gray-600">M S Ramaiah University of Applied Sciences</p>
                         </div>
                         <div class="text-right">
-                            <span class="skill-tag text-sm px-3 py-1 rounded-full">Jul 2018 – Jun 2022</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Jul 2018 – Jun 2022</span>
                             <p class="text-gray-700 mt-2 font-semibold gradient-text">CGPA: 8.84</p>
                         </div>
                     </div>
@@ -718,7 +718,7 @@
                             <p class="text-gray-600">JSS RSH PU College, Vidhyagiri, Dharwad</p>
                         </div>
                         <div class="text-right">
-                            <span class="skill-tag text-sm px-3 py-1 rounded-full">May 2017 – Mar 2018</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">May 2017 – Mar 2018</span>
                             <p class="text-gray-700 mt-2 font-semibold gradient-text">91.83%</p>
                         </div>
                     </div>
@@ -731,7 +731,7 @@
                             <p class="text-gray-600">Morarji Desai Residential School, Alagawadi</p>
                         </div>
                         <div class="text-right">
-                            <span class="skill-tag text-sm px-3 py-1 rounded-full">Jun 2015 – Apr 2016</span>
+                            <span class="bg-blue-100 text-blue-800 text-sm px-3 py-1 rounded-full">Jun 2015 – Apr 2016</span>
                             <p class="text-gray-700 mt-2 font-semibold gradient-text">94.24%</p>
                         </div>
                     </div>
@@ -766,11 +766,11 @@
                         </ul>
                         <div class="mt-4 flex flex-wrap gap-2">
                             <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Python</span>
-                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">FastAPI</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">GenAI</span>
+                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded">FastAPI</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">GenAI</span>
                             <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">RAG</span>
-                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">LangChain</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Docker</span>
+                            <span class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded">LangChain</span>
+                            <span class="bg-cyan-100 text-cyan-800 text-xs font-medium px-2.5 py-0.5 rounded">Docker</span>
                         </div>
                     </div>
                 </div>
@@ -798,8 +798,8 @@
                         </ul>
                         <div class="mt-4 flex flex-wrap gap-2">
                             <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Python</span>
-                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">MCP</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Claude</span>
+                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded">MCP</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">Claude</span>
                             <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">LibreChat</span>
                         </div>
                     </div>
@@ -822,10 +822,10 @@
                     </p>
                     <div class="flex flex-wrap gap-2 mt-4">
                         <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Machine Learning</span>
-                        <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Python</span>
-                        <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">Scikit-learn</span>
+                        <span class="bg-teal-100 text-teal-800 text-xs px-3 py-1 rounded-full">Python</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">Scikit-learn</span>
                         <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Pandas</span>
-                        <span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">Cybersecurity</span>
+                        <span class="bg-pink-100 text-pink-800 text-xs px-3 py-1 rounded-full">Cybersecurity</span>
                     </div>
                 </div>
             </div>
@@ -846,10 +846,10 @@
                     </p>
                     <div class="flex flex-wrap gap-2 mt-4">
                         <span class="bg-blue-100 text-blue-800 text-xs px-3 py-1 rounded-full">Django</span>
-                        <span class="bg-green-100 text-green-800 text-xs px-3 py-1 rounded-full">Python</span>
-                        <span class="bg-yellow-100 text-yellow-800 text-xs px-3 py-1 rounded-full">PostgreSQL</span>
+                        <span class="bg-teal-100 text-teal-800 text-xs px-3 py-1 rounded-full">Python</span>
+                        <span class="bg-indigo-100 text-indigo-800 text-xs px-3 py-1 rounded-full">PostgreSQL</span>
                         <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Bootstrap</span>
-                        <span class="bg-red-100 text-red-800 text-xs px-3 py-1 rounded-full">Web Development</span>
+                        <span class="bg-pink-100 text-pink-800 text-xs px-3 py-1 rounded-full">Web Development</span>
                     </div>
                 </div>
             </div>
@@ -871,15 +871,15 @@
                             <li>Intelligent field extraction from PDF documents with structured JSON output</li>
                             <li>Agentic workflows for document processing with automated retry mechanisms</li>
                             <li>MLflow integration for comprehensive LLM tracing and cost monitoring</li>
-                            <li>Enterprise system integration (CargoWise, NetCHB, MercureGate)</li>
+                            <li>Enterprise system integration with various platforms</li>
                         </ul>
                         <div class="mt-4 flex flex-wrap gap-2">
                             <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Python</span>
-                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">OpenAI</span>
-                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">LangChain</span>
+                            <span class="bg-teal-100 text-teal-800 text-xs font-medium px-2.5 py-0.5 rounded">OpenAI</span>
+                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">LangChain</span>
                             <span class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded">LangGraph</span>
-                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">MongoDB</span>
-                            <span class="bg-indigo-100 text-indigo-800 text-xs font-medium px-2.5 py-0.5 rounded">MLflow</span>
+                            <span class="bg-pink-100 text-pink-800 text-xs font-medium px-2.5 py-0.5 rounded">MongoDB</span>
+                            <span class="bg-cyan-100 text-cyan-800 text-xs font-medium px-2.5 py-0.5 rounded">MLflow</span>
                         </div>
                     </div>
                 </div>
